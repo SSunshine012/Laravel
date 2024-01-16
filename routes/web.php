@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AddminController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -24,4 +25,5 @@ Route::post('multiplication',function(Request $request){
     $data['number'] = $request->input('number');
     return view('result', $data );
 });
+Route::get('/form',[AddminController::class,'index']);
 
