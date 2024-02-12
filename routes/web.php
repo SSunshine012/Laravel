@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AddminController;
+use App\Http\Controllers\AuthController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -26,4 +27,11 @@ Route::post('multiplication',function(Request $request){
     return view('result', $data );
 });
 Route::get('/form',[AddminController::class,'index']);
-
+Route::get('/login',[AuthController::class,'login_view']);
+Route::get('/register', [AuthController::class, 'register_view']);
+Route::get('/logout', [AuthController::class, 'logout_process']);
+Route::post('/login', [AuthController::class, 'login_process']);
+Route::post('/register', [AuthController::class, 'register_process']);
+Route::get('homepage',function(){
+    return view('hompage');
+});

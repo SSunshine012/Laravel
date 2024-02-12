@@ -101,8 +101,8 @@
                 </li>
                 <li class="nav-item"> <a class="nav-link" data-widget="fullscreen" href="#" role="button">
                         <i class="fas fa-expand-arrows-alt"></i> </a> </li>
-                <li class="nav-item"> <a class="nav-link" data-widget="control-sidebar" data-slide="true"
-                        href="#" role="button"> <i class="fas fa-th-large"></i> </a> </li>
+                <li class="nav-item z-50">
+                    <a class="nav-link btn btn-danger" href="logout" style="color: white"> logout </a>
             </ul>
         </nav> <!-- /.navbar --> <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4"> <!-- Brand Logo --> <a href="index3.html"
@@ -152,12 +152,7 @@
         <div class="content-wrapper"> <!-- Content Header (Page header) -->
             @yield('content')
         </div> <!-- /.content-wrapper --> <!-- Control Sidebar -->
-        <aside class="control-sidebar control-sidebar-dark"> <!-- Control sidebar content goes here -->
-            <div class="p-3">
-                <h5>Title</h5>
-                <p>Sidebar content</p>
-            </div>
-        </aside> <!-- /.control-sidebar --> <!-- Main Footer -->
+
         <footer class="main-footer"> <!-- To the right -->
             <div class="float-right d-none d-sm-inline"> Anything you want </div> <!-- Default to the left -->
             <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights
@@ -167,7 +162,9 @@
     <script src="{{ url('assets/plugins/jquery/jquery.min.js') }}"></script> <!-- Bootstrap 4 -->
     <script src="{{ url('assets/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script> <!-- AdminLTE App -->
     <script src="{{ url('assets/dist/js/adminlte.min.js') }}"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
