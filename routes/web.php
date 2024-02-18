@@ -35,3 +35,6 @@ Route::post('/register', [AuthController::class, 'register_process']);
 Route::get('homepage',function(){
     return view('hompage');
 });
+Route::get('/multiplication_table',function(){
+    return view('multiplication_table');
+});
